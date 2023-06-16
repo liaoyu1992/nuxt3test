@@ -1,23 +1,13 @@
-<script setup lang="ts">
-const online = useOnline()
-</script>
 
 <template>
-  <div>
-    <Logos mb-6 />
-    <Suspense>
-      <ClientOnly>
-        <PageView v-if="online" />
-        <div v-else text-gray:80>
-          You're offline
-        </div>
-      </ClientOnly>
-      <template #fallback>
-        <div italic op50>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
-    <InputEntry />
+  <div class="mainContainer">
+   
   </div>
 </template>
+<script lang="ts" setup>
+import { ref, onMounted, watchEffect, computed } from "vue";
+import { NTab, NTabs, FormInst, useMessage, NButton, NIcon } from "naive-ui";
+import { useI18n } from "vue-i18n";
+
+</script>
+<style lang="scss" scoped></style>

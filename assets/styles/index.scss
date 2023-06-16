@@ -1,0 +1,137 @@
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  border-radius: 2rem;
+}
+
+.text-white-bold-32 {
+  color: white;
+  font-size: $fs-32;
+  font-weight: bold;
+}
+
+.text-black-bold-28 {
+  color: $color-1D2129-text-stress;
+  font-size: $fs-28;
+  font-weight: bold;
+  line-height: $height-22;
+}
+
+.text-black-18 {
+  color: $color-1C1F23;
+  font-size: $fs-18;
+}
+
+.text-165DFF-18 {
+  color: $color-165DFF-normal;
+  font-size: $fs-18;
+}
+
+.text-4e5969-14 {
+  color: $color-4E5969-fill-stress;
+  font-size: $fs-14;
+}
+
+.text-0256FF-14 {
+  color: #0256ff;
+  font-size: $fs-14;
+}
+
+.text-1D2129-22 {
+  color: $color-1D2129-text-stress;
+  font-size: 22px;
+  line-height: 20px;
+}
+
+.text-1D2129-18 {
+  color: $color-1D2129-text-stress;
+  font-size: 18px;
+}
+
+.text-1D2129-14 {
+  color: #1d2129;
+  font-size: 14px;
+}
+
+.text-1D2129-16 {
+  color: #1d2129;
+  font-size: 16px;
+}
+
+.text-1D2129-18 {
+  color: #1d2129;
+  font-size: 18px;
+}
+
+.text-1D2129-24 {
+  color: #1d2129;
+  font-size: 24px;
+}
+
+.text-4E5969-14 {
+  color: #4e5969;
+  font-size: 14px;
+}
+
+.text-4E5969-18 {
+  color: #4e5969;
+  font-size: 18px;
+}
+
+.text-F53F3F-14 {
+  color: $color-F53F3F-error-normal;
+  font-size: 14px;
+}
+
+.tableWrap {
+  flex: 1;
+  @apply flex flex-col bg-white w-full px-[16px];
+}
+
+.tableHeader {
+  @apply flex justify-between items-center font-400 text-18px py-[16px];
+}
+
+.btnWrap {
+  flex: 0 0 60px;
+  @apply flex items-center font-400 text-18px;
+}
+
+.gridTable {
+  flex: 1;
+}
+
+.flex-wrap-grid {
+  @apply rounded h-[100%] flex flex-col;
+}
+
+.mainContainer {
+  @apply w-full h-full px-[16px] pt-[16px] bg-[#f8f8f8];
+}
+
+.subContainer {
+  @apply rounded h-full flex flex-col bg-white;
+}
+
+.formContainer {
+  @apply pt-[18px] mx-[16px] rounded;
+  border-bottom: #eee 1px solid;
+}
+
+:deep(.n-drawer-mask) {
+  background-color: rgba(0, 0, 0, 0.1);
+}

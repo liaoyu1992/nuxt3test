@@ -1,27 +1,29 @@
-<script setup lang="ts">
-import { appName } from '~/constants'
-
-useHead({
-  title: appName,
-})
-</script>
 
 <template>
-  <VitePwaManifest />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <n-dialog-provider>
+    <n-message-provider>
+      <n-config-provider inline-theme-disabled>
+        <n-notification-provider>
+          <NuxtLayout>
+            <NuxtPage></NuxtPage>
+          </NuxtLayout>
+        </n-notification-provider>
+      </n-config-provider>
+    </n-message-provider>
+  </n-dialog-provider>
 </template>
+<script lang="ts" setup>
+import {
+  NConfigProvider,
+  NMessageProvider,
+  NDialogProvider,
+  NNotificationProvider,
+  zhCN,
+  dateZhCN,
+  enUS,
+  dateEnUS,
+} from "naive-ui";
 
+</script>
 <style>
-html, body , #__nuxt{
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-html.dark {
-  background: #222;
-  color: white;
-}
 </style>

@@ -1,0 +1,43 @@
+
+<template>
+  <div class="w-[100%]">
+    
+  </div>
+</template>
+<script lang="ts" setup>
+import {
+  ref,
+  Component,
+  watch,
+  onMounted,
+  reactive,
+  computed,
+  inject,
+  toRaw,
+} from "vue";
+import {
+  NIcon,
+  NSelect,
+  FormInst,
+  NForm,
+  NFormItem,
+  FormItemRule,
+  useMessage,
+  NButton,
+  NInput,
+  NDatePicker,
+  NCard,
+  NGrid,
+  NGi,
+  NFormItemGi,
+  NInputNumber,
+  NModal,
+  SelectOption,
+  NCheckbox,
+  FormRules,
+} from "naive-ui";
+import { useI18n } from "vue-i18n";
+import { number } from "echarts/core";
+
+</script>
+<style lang="scss" scoped></style>
